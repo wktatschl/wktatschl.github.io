@@ -12,7 +12,6 @@
 
 #app {
   font-family: 'Avenir', Arial, Helvetica, sans-serif;
-  /* font-family: 'Cormorant', serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -22,8 +21,6 @@
 h1, h2, h3, h4 {
   font-family: 'Cormorant', serif;
   font-weight: bold;
-  /* font-size: 2.5em; */
-  /* font-family: 'Avenir', Arial, Helvetica, sans-serif; */
 }
 
 h1 {
@@ -44,7 +41,6 @@ router-link a {
 }
 
 nav a.router-link-exact-active {
-  /* color: #42b983; */
   color: cornflowerblue;
 }
 </style>
