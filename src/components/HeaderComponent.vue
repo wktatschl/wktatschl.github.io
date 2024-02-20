@@ -172,8 +172,8 @@ export default {
         gap: 40px;
         text-decoration: none;
         align-items: center;
-        font-size: 1.3em;
-        font-family: 'Cormorant';
+        font-size: 1.1em;
+        font-family: 'Cormorant Garamond';
     }
 
     .nav-links a {
