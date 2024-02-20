@@ -3,6 +3,8 @@
     <div class="home">
       <HeaderComponent />
     </div>
+    <br>
+    <br>
     <div class="hero-section">
       <div class="hero-intro">
         <h1 v-if="isEnglish">Hello ! <span class="welcome">Welcome </span>to my portfolio site.</h1>
@@ -28,7 +30,9 @@
         </div>
       </div>
     </div>
-
+    <br>
+    <br>
+    <br>
     <div class="recent-projects-section" id="myWork">
       <div class="exp-overview">
         <h4>At a glance</h4>
@@ -125,15 +129,17 @@ template {
 }
 
 .hero-img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
 .hero-img img {
-  height: 600px;
+  height: 400px;
+  width: 400px;
   margin-top: 40px;
-  border-radius: 10%;
-  clip-path: circle(40%);
+  border-radius: 50%;
+  outline: 2px dotted #FFC0CB;
+  padding: 5px;
 }
 
 .hero-actions {

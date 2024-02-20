@@ -126,6 +126,8 @@ export default {
       background-color: aliceblue;
       transition: right 0.3s ease;
       padding: 20px 0;
+      border: 2px dotted cornflowerblue;
+      z-index: 1;
     }
 
     .lateral-menu.open {
@@ -144,7 +146,7 @@ export default {
       padding: 15px;
       text-decoration: none;
       color: #2c3e50;
-      font-family: 'Cormorant';
+      font-family: monospace;
       font-size: 1.3em;
     }
 
@@ -172,7 +174,7 @@ export default {
         gap: 40px;
         text-decoration: none;
         align-items: center;
-        font-size: 1.3em;
+        font-size: 1.15em;
         font-family: monospace;
     }
 
