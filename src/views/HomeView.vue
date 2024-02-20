@@ -99,8 +99,6 @@ export default {
       return this.language === 'english'
     }, 
   },
-  data() {
-  },
 }
 </script>
 
