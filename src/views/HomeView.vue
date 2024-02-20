@@ -134,11 +134,11 @@ template {
 }
 
 .hero-img img {
-  height: 400px;
-  width: 400px;
+  height: 420px;
+  width: 420px;
   margin-top: 40px;
   border-radius: 50%;
-  outline: 2px dotted #FFC0CB;
+  /* outline: 2px dotted #FFC0CB; */
   padding: 5px;
 }
 
@@ -332,7 +332,7 @@ h5 {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .hero-img-container {
     display: none;
   }
@@ -347,6 +347,10 @@ h5 {
 
   .recent-project, .exp-overview {
     width: calc(50% - 10px)
+  }
+
+  .exp-overview h2 {
+    font-size: 2em;
   }
 }
 
