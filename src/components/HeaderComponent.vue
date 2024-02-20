@@ -156,9 +156,9 @@ export default {
     }
 
     .logo a{
-        font-family: 'Cormorant';
+        font-family: monospace;
         text-decoration: none;
-        font-size: 3em;
+        font-size: 5em;
         color: cornflowerblue;
     }
 
@@ -172,8 +172,8 @@ export default {
         gap: 40px;
         text-decoration: none;
         align-items: center;
-        font-size: 1.1em;
-        font-family: 'Cormorant Garamond';
+        font-size: 1.3em;
+        font-family: monospace;
     }
 
     .nav-links a {
@@ -192,7 +192,7 @@ export default {
     }
 
     #langBtn {
-      padding: 4px 4px;
+      padding: 7px 4px 8px;
       background-color: #2c3e50;
       border: 1px solid #2c3e50;
       border-radius: 15px;
@@ -203,10 +203,10 @@ export default {
     }
 
     #langBtn span {
-      padding: 3px 6px;
+      padding: 6px 6px;
       border-radius: 10px;
       transition: all .1s ease-in;
-      font-family: 'Cormorant';
+      font-family: monospace;
     }
 
     #langBtn span.active {
