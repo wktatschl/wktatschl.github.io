@@ -16,7 +16,8 @@
           <img :src="project.image" :alt="project.title">
         </div>
         <br>
-        <p>{{ project.description }}</p>
+        <p v-if="isEnglish">{{ project.description_en }}</p>
+        <p v-else>{{ project.description_fr }}</p>
         <br>
         <div class="proj-btn-container">
           <div class="proj-btn-container">
