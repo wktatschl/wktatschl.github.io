@@ -170,8 +170,11 @@ template {
 #work-together {
   background-color: transparent;
   font-weight: bold;
-  border: 1px solid #FFC0CB;
   border: 2px solid cornflowerblue;
+}
+
+#work-together:hover {
+  background-color: rgba(100, 148, 237, 0.226);
 }
 
 #past-projects {
@@ -179,6 +182,10 @@ template {
   border: 2px solid #FFC0CB;
   color: #2c3e50;
   font-weight: bold;
+}
+
+#past-projects:hover {
+  background-color: #ffc0cb4e;
 }
 
 .hero-intro .welcome {
@@ -330,6 +337,10 @@ h5 {
   color: cornflowerblue;
 }
 
+#see-more:hover {
+  text-decoration: underline;
+}
+
 .cv-container {
   padding: 40px;
   display: flex;
@@ -350,10 +361,6 @@ h5 {
   padding: 10px;
   border: 2px dotted cornflowerblue
 }
-
-/* .cv-img:hover img {
-  border: 2px dotted #FFC0CB;
-} */
 
 
 @media screen and (max-width: 1024px) {

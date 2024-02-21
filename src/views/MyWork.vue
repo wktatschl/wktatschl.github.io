@@ -111,6 +111,10 @@ export default {
     color: cornflowerblue;
   }
 
+  .proj-btn-container a:hover {
+    color: #FFC0CB;
+  }
+
   .linkBtn a {
     text-decoration: none;
     color: white;
