@@ -19,10 +19,12 @@
         <p>{{ project.description }}</p>
         <br>
         <div class="proj-btn-container">
-          <!-- <button class="linkBtn"> -->
-            <a :href="project.url">checkout GitHub</a>
-          <!-- </button> -->
-      </div>
+          <div class="proj-btn-container">
+          <a :href="project.domain">view project</a>
+          <span>|</span>
+          <a :href="project.url">view GitHub</a>
+          </div>
+        </div>
     </div>
     
     </div>
@@ -92,6 +94,11 @@ export default {
     flex-grow: 1;
     display: flex;
     align-items: end;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: cornflowerblue;
   }
 
   .proj-btn-container a {

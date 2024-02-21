@@ -207,6 +207,7 @@ export default {
       font-weight: bold;
       font-size: .8em;
       cursor: pointer;
+      margin-right: 10px;
     }
 
     #langBtn span {

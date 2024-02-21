@@ -36,7 +36,7 @@
     <div class="recent-projects-section" id="myWork">
       <div class="exp-overview">
         <h4>At a glance</h4>
-        <h2>Techs | Languages | Frameworks</h2>
+        <h2>Techs | Languages| Frameworks</h2>
         <br>
         <br>
         <p>JavaScript <progress value="80" max="100">80%</progress></p>
@@ -55,9 +55,7 @@
         </div>
         <br>
         <br>
-        <div class="proj-btn-container">
-          <a :href="project.url">checkout GitHub</a>
-        </div>
+        <p class="view-more">check out my projects page</p>
         </router-link>
       </div>
     </div>
@@ -138,7 +136,6 @@ template {
   width: 420px;
   margin-top: 40px;
   border-radius: 50%;
-  /* outline: 2px dotted #FFC0CB; */
   padding: 5px;
 }
 
@@ -270,9 +267,15 @@ a {
   width: 100%;
 }
 
-.proj-btn-container {
+.view-more {
   position: absolute;
   bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  transform: translateX(-10%);
+  color: cornflowerblue;
 }
 
 .proj-btn-container a {
