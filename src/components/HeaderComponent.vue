@@ -171,7 +171,7 @@ export default {
 
     .nav-links {
         display: flex;
-        flex: 0 1 400px;
+        flex: 0 1 450px;
         gap: 40px;
         text-decoration: none;
         align-items: center;
