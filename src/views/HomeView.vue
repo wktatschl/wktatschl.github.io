@@ -35,8 +35,14 @@
     <br>
     <div class="recent-projects-section" id="myWork">
       <div class="exp-overview">
-        <h4>At a glance</h4>
-        <h2>Techs | Languages| Frameworks</h2>
+        <h4 v-if="isEnglish">At a glance</h4>
+        <h4 v-else>En aperçu</h4>
+        <h2>
+          <span v-if="isEnglish">Techs |</span><span v-else>Technos |</span> 
+          <span v-if="isEnglish">Languages| </span>
+          <span v-else>Langages| </span>
+          Frameworks
+        </h2>
         <br>
         <br>
         <p>JavaScript <progress value="80" max="100">80%</progress></p>
@@ -55,13 +61,17 @@
         </div>
         <br>
         <br>
-        <p class="view-more">check out my projects page</p>
+        <p v-if="isEnglish" class="view-more">see projects page for more info</p>
+        <p v-else class="view-more">voir la page projets pour plus d'infos</p>
         </router-link>
       </div>
     </div>
     
     <div class="more-container">
-      <router-link to="/my-work" id="see-more"><h5>More projects information</h5></router-link>
+      <router-link to="/my-work" id="see-more"><h5>
+        <span v-if="isEnglish">More projects information</span>
+        <span v-else>Plus d'informations sur les projets</span>
+        </h5></router-link>
       <router-link to="/my-work"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
       <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
       </svg></router-link>
@@ -69,10 +79,15 @@
     
     <div class="cv-container">
       <div class="cv-text">
-        <h2>Download my CV</h2>
-        <p>Click the button below to download my CV in PDF format :</p>
+        <h2 v-if="isEnglish">Download my CV</h2>
+        <h2 v-else>Télécharger mon CV</h2>
+        <p v-if="isEnglish">Click the button below to download my CV in PDF format :</p>
+        <p v-else>Cliquez sur le bouton ci-dessous pour télécharger mon CV au format PDF :</p>
         <br>
-        <a href="@/assets/TATSCHL_Wolfgang_CV_web_dev_stage copy.pdf" download="TATSCHL_Wolfgang_fullstack_dev_CV.pdf" class="download-btn">Download CV</a>
+        <a href="@/assets/TATSCHL_Wolfgang_CV_web_dev_stage copy.pdf" download="TATSCHL_Wolfgang_fullstack_dev_CV.pdf" class="download-btn">
+          <span v-if="isEnglish">Download CV</span>
+          <span v-else>Télécharger le CV</span>
+        </a>
       </div>
       <br>
       <div class="cv-img">
@@ -276,6 +291,8 @@ a {
   gap: 15px;
   transform: translateX(-10%);
   color: cornflowerblue;
+  font-style: italic;
+  font-size: .9em;
 }
 
 .proj-btn-container a {

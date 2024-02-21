@@ -20,11 +20,15 @@
         <p v-else>{{ project.description_fr }}</p>
         <br>
         <div class="proj-btn-container">
-          <div class="proj-btn-container">
-          <a :href="project.domain">view project</a>
+          <a :href="project.domain">
+            <span v-if="isEnglish">view project</span>
+            <span v-else>voir le projet</span>
+          </a>
           <span>|</span>
-          <a :href="project.url">view GitHub</a>
-          </div>
+          <a :href="project.url">
+            <span v-if="isEnglish">see on GitHub</span>
+            <span v-else>vers GitHub</span>
+          </a>
         </div>
     </div>
     
