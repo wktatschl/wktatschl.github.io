@@ -11,7 +11,16 @@
         <h1 v-if="isEnglish">About <span class="blue-span">me</span></h1>
         <h1 v-else>À propos de <span class="blue-span">moi</span></h1>
         <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est ea iste possimus nostrum ratione similique adipisci dolores unde omnis, culpa mollitia veritatis perferendis itaque quasi sed dolorum accusamus, sequi minus officia architecto suscipit repellat. Rerum sunt incidunt animi optio sit minima, consectetur sint cum voluptate suscipit exercitationem temporibus libero dolorem corporis voluptates sequi consequuntur ab ipsum. Amet voluptates exercitationem quas, nulla laborum error magni? Commodi maiores exercitationem harum explicabo et saepe quisquam doloribus non optio aperiam, odit asperiores quam dolorum voluptas nisi eos autem dolorem dolor a numquam ut fugit vero aliquam quaerat. Voluptatibus, aliquid. Accusantium eligendi perspiciatis earum!</p>
+        <div v-if="isEnglish" class="about-text">
+          <p>I'm a husband and proud father of two amazing kids ! I was born in Austria, but spent all my life in the U.S. until 2.5 years ago...when my family and I moved to Bordeaux 🍷! We love it here.</p><br>
+          <p>My professional background is similarly varied, and while I'm a little bummed to be a relative latecomer to the IT scene (it took me only 12 years of professional experience to get into web development), I'm thoroughly enjoying it and finding it fits well with my strengths 💪 and interests.</p><br>
+          <p>I'll stop here for now but will add more 'about me' in the near future :)</p>
+        </div>
+        <div v-else class="about-text">
+          <p>Je suis un mari et fier d'être le père de deux enfants extraordinaires ! Je suis né en Autriche, mais j'ai passé toute ma vie aux États-Unis jusqu'à il y a deux ans et demi... quand ma famille et moi avons déménagé à Bordeaux 🍷 ! On l'adore.</p><br>
+          <p>Mon parcours professionnel est tout aussi varié, et bien que je sois un peu déçu d'être un retardataire sur la scène informatique (il ne m'a fallu que 12 ans d'expérience professionnelle pour me lancer dans le développement web), je l'apprécie énormément et je trouve qu'il correspond bien à mes forces 💪 et à mes centres d'intérêt.</p><br>
+          <p>Je m'arrête ici pour l'instant, mais j'ajouterai plus d'informations sur moi dans un futur proche :)</p>
+        </div>
       </div>
       <br>
       <br>
