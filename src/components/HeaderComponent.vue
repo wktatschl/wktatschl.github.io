@@ -171,6 +171,7 @@ export default {
 
     .nav-links {
         display: flex;
+        flex: 0 1 400px;
         gap: 40px;
         text-decoration: none;
         align-items: center;
@@ -180,6 +181,10 @@ export default {
 
     .nav-links a {
         text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color:#FFC0CB;
     }
 
     .social-links {

@@ -331,6 +331,10 @@ h5 {
   border: 2px dotted cornflowerblue
 }
 
+/* .cv-img:hover img {
+  border: 2px dotted #FFC0CB;
+} */
+
 
 @media screen and (max-width: 1024px) {
   .hero-img-container {
