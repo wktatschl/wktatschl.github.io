@@ -17,8 +17,8 @@
           <p>I'll stop here for now but will add more 'about me' in the near future :)</p>
         </div>
         <div v-else class="about-text">
-          <p>Je suis un mari et fier d'être le père de deux enfants extraordinaires ! Je suis né en Autriche, mais j'ai passé toute ma vie aux États-Unis jusqu'à il y a deux ans et demi... quand ma famille et moi avons déménagé à Bordeaux 🍷 ! On l'adore.</p><br>
-          <p>Mon parcours professionnel est tout aussi varié, et bien que je sois un peu déçu d'être un retardataire sur la scène informatique (il ne m'a fallu que 12 ans d'expérience professionnelle pour me lancer dans le développement web), je l'apprécie énormément et je trouve qu'il correspond bien à mes forces 💪 et à mes centres d'intérêt.</p><br>
+          <p>Je suis un mari et l’heureux père de deux enfants extraordinaires. Je suis né en Autriche, mais j'ai passé toute ma vie aux États-Unis jusqu'à il y a deux ans et demi... lorsque ma famille et moi avons déménagé à la belle ville de Bordeaux 🍷 ! On l’adore.</p><br>
+          <p>Mon parcours professionnel est tout aussi varié, et bien que je sois un peu déçu d'être un retardataire sur la scène informatique (il ne m'a fallu que 12 ans d'expérience professionnelle pour me lancer dans le développement web), je l'apprécie énormément et je trouve qu'elle correspond bien à mes forces 💪 et à mes centres d'intérêt.</p><br>
           <p>Je m'arrête ici pour l'instant, mais j'ajouterai plus d'informations sur moi dans un futur proche :)</p>
         </div>
       </div>
