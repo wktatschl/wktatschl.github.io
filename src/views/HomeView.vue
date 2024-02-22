@@ -84,14 +84,14 @@
         <p v-if="isEnglish">Click the button below to download my CV in PDF format :</p>
         <p v-else>Cliquez sur le bouton ci-dessous pour télécharger mon CV au format PDF :</p>
         <br>
-        <a href="https://drive.google.com/file/d/1aAlvf2MXOr9vo4Pq5-KH2r1Fm6I1TGF8/view?usp=sharing" download="TATSCHL_Wolfgang_developpeur_web_CV.pdf" class="download-btn">
+        <a href="https://drive.google.com/file/d/1D-psLwxn8kK2nPu2qOgNgiVSPNnD1KJK/view?usp=drive_link" download="TATSCHL_Wolfgang_developpeur_web_CV.pdf" class="download-btn">
           <span v-if="isEnglish">Download CV</span>
           <span v-else>Télécharger le CV</span>
         </a>
       </div>
       <br>
       <div class="cv-img">
-        <img src="@/assets/img/placeholder_CV_img.png" alt="CV screenshot">
+        <img src="@/assets/img/wolfgang_CV_screenshot.png" alt="CV screenshot">
       </div>
     </div>
 
