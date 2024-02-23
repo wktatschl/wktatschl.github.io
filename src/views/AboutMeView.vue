@@ -26,7 +26,7 @@
       <br>
       <br>
     </div>
-    <FooterComponent />
+      <FooterComponent />
   </div>
 </template>
 
@@ -50,6 +50,10 @@ export default {
 </script>
 
 <style scoped>
+
+  .about-container {
+    min-height: 100vh;
+  }
 
   .about-section {
     display: flex;

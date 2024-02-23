@@ -23,6 +23,7 @@ export default {
         align-items: center;
         justify-content: center;
         font-family: 'Cormorant';
+        width: 100%;
     }
 
     #copyright {

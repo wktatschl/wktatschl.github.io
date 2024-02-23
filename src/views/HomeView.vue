@@ -125,6 +125,12 @@ template {
   overflow-x: hidden;
 }
 
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-section {
   display: flex;
   width: 80%;
@@ -344,6 +350,7 @@ h5 {
 .cv-container {
   padding: 40px;
   display: flex;
+  width: 100vw;
   margin: 50px auto 0;
   justify-content: center;
   align-items: center;

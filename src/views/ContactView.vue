@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-wrapper">
     <HeaderComponent />
     <br>
     <div class="contact-container">
@@ -55,8 +55,8 @@
             <p>linkedin.com/in/wolfgangtatschl</p>
           </div>
           <br>
-          <br>
-          <p v-if="isEnglish"></p>
+          <p v-if="isEnglish" id="contact-me-fyi">Clicking 'Send' will open up your default email from which to send me your message. You can pre-populate your message with this form, or just leave this form empty and click 'Send' to draft a message directly from your email. :)</p>
+          <p v-else id="contact-me-fyi">En cliquant sur "Envoyer", vous ouvrirez votre client de messagerie par défaut, à partir duquel vous pourrez m'envoyer votre message. Vous pouvez pré-remplir votre message avec ce formulaire, ou simplement laisser ce formulaire vide et cliquer sur "Envoyer" pour rédiger un message directement à partir de votre messagerie électronique :)</p>
         </div>
       </div>
     </div>
@@ -89,9 +89,16 @@ export default {
       const firstName = firstNameInput.value;
       const lastName = lastNameInput.value;
       const message = messageInput.value;
+      
+      let subject, body;
 
-      const subject = encodeURIComponent(`Contact Form Inquiry`);
-      const body = encodeURIComponent(`Dear Wolfgang, \n\n ${message} \n\n Cordially, ${firstName} ${lastName}`);
+      if (this.isEnglish) {
+        subject = encodeURIComponent(`Contact Form Inquiry`);
+        body = encodeURIComponent(`Hello Wolfgang, \n\n ${message} \n\n Cordially, \n\n ${firstName} ${lastName}`);
+      } else {
+        subject = encodeURIComponent(`Demande de formulaire de contact`);
+        body = encodeURIComponent(`Bonjour Wolfgang, \n\n ${message} \n\n Cordialement, \n\n ${firstName} ${lastName}`);
+      }
 
       const mailtoLink = `mailto:wktatschl@icloud.com?subject=${subject}&body=${body}`;
 
@@ -101,6 +108,7 @@ export default {
       lastNameInput.value = '';
       messageInput.value = '';
     }
+
   }
 }
 </script>
@@ -126,6 +134,7 @@ export default {
     border: 1px solid #2c3e50;
     border-radius: 50px;
     padding: 60px;
+    margin-bottom: 50px;
   }
 
   .contact-form input {
@@ -137,7 +146,7 @@ export default {
   #message-text {
     padding: 5px;
     font-family: 'Avenir', sans-serif;
-    width: 300px;
+    max-width: 300px;
   }
 
   .send-btn {
@@ -155,7 +164,7 @@ export default {
   }
 
   .contact-info {
-    margin-top: 40px;
+    margin: 20px 0 0 20px;
   }
 
   .blue-span {
@@ -175,6 +184,19 @@ export default {
     margin-left: 20px;
   }
 
+  #contact-me-fyi {
+    font-size: .8em;
+    width: 350px;
+    color: #2c3e50;
+  }
+
+  .footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
   @media screen and (max-width: 768px) {
     .contact-section {
       margin: 0 auto;
@@ -187,7 +209,7 @@ export default {
   @media screen and (max-width: 440px) {
     .contact-form {
       width: 290px;
-      padding: 20px;
+      padding: 40px;
       margin-bottom: 20px;
     }
   }
