@@ -20,7 +20,7 @@
           <label for="Message">Message</label><br>
           <textarea name="message-text" id="message-text" cols="30" rows="10"></textarea>
           <br>
-          <button class="send-btn">
+          <button @click="sendEmail" class="send-btn">
             <span v-if="isEnglish" class="span">Send</span>
             <span v-else class="span">Envoyer</span>
           </button>
@@ -76,6 +76,20 @@ export default {
     isEnglish() {
       return this.language === 'english'
     }, 
+  },
+  methods: {
+    sendEmail() {
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const message = document.getElementById('message-text').value;
+
+      const subject = encodeURIComponent(`Contact Form Inquiry from ${firstName} ${lastName}`);
+      const body = encodeURIComponent(`Dear Wolfgang, ${message}`);
+
+      const mailtoLink = `mailto:wktatschl@icloud.com?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
+    }
   }
 }
 </script>
