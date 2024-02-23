@@ -91,7 +91,7 @@ export default {
       const message = messageInput.value;
 
       const subject = encodeURIComponent(`Contact Form Inquiry`);
-      const body = encodeURIComponent(`Dear Wolfgang, %0D%0A ${message} %0D%0A %0D%0A Cordially, ${firstName} ${lastName}`);
+      const body = encodeURIComponent(`Dear Wolfgang, \n\n ${message} \n\n Cordially, ${firstName} ${lastName}`);
 
       const mailtoLink = `mailto:wktatschl@icloud.com?subject=${subject}&body=${body}`;
 
