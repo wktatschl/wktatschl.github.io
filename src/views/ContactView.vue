@@ -9,16 +9,16 @@
             <span v-if="isEnglish" class="span">First name</span>
             <span v-else class="span">Prénom</span>
             </label><br>
-          <input type="text" name="first-name" id="first-name">
+          <input type="text" name="first-name" id="first-name" required>
           <br>
           <label for="Last name">
             <span v-if="isEnglish" class="span">Last name</span>
             <span v-else class="span">Nom</span>
           </label><br>
-          <input type="text" name="last-name" id="last-name">
+          <input type="text" name="last-name" id="last-name" required>
           <br>
           <label for="Message">Message</label><br>
-          <textarea name="message-text" id="message-text" cols="30" rows="10"></textarea>
+          <textarea name="message-text" id="message-text" cols="30" rows="10" required></textarea>
           <br>
           <button @click="sendEmail" class="send-btn">
             <span v-if="isEnglish" class="span">Send</span>
@@ -54,6 +54,9 @@
             </svg>
             <p>linkedin.com/in/wolfgangtatschl</p>
           </div>
+          <br>
+          <br>
+          <p v-if="isEnglish"></p>
         </div>
       </div>
     </div>
@@ -87,8 +90,8 @@ export default {
       const lastName = lastNameInput.value;
       const message = messageInput.value;
 
-      const subject = encodeURIComponent(`Contact Form Inquiry from ${firstName} ${lastName}`);
-      const body = encodeURIComponent(`Dear Wolfgang, ${message}`);
+      const subject = encodeURIComponent(`Contact Form Inquiry`);
+      const body = encodeURIComponent(`Dear Wolfgang, %0D%0A ${message} %0D%0A %0D%0A Cordially, ${firstName} ${lastName}`);
 
       const mailtoLink = `mailto:wktatschl@icloud.com?subject=${subject}&body=${body}`;
 
@@ -128,6 +131,13 @@ export default {
   .contact-form input {
     margin-bottom: 10px;
     padding: 4px;
+    font-family: 'Avenir', sans-serif;
+  }
+
+  #message-text {
+    padding: 5px;
+    font-family: 'Avenir', sans-serif;
+    width: 300px;
   }
 
   .send-btn {
