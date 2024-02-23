@@ -135,6 +135,7 @@ export default {
     border-radius: 50px;
     padding: 60px;
     margin-bottom: 50px;
+    width: 380px;
   }
 
   .contact-form input {
@@ -146,7 +147,7 @@ export default {
   #message-text {
     padding: 5px;
     font-family: 'Avenir', sans-serif;
-    max-width: 300px;
+    width: 95%;
   }
 
   .send-btn {
