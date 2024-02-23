@@ -150,6 +150,10 @@ export default {
       font-size: 1.3em;
     }
 
+    .lateral-menu a:hover {
+      color:#FFC0CB;
+    }
+
     .burger-line {
       width: 30px;
       height: 3px;
@@ -236,6 +240,7 @@ export default {
     @media screen and (max-width: 600px) { 
       .burger-menu {
         display: block;
+        cursor: pointer;
       }
 
       #langBtn {
