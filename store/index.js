@@ -11,7 +11,7 @@ export default createStore({
               description_en: 'In this group project, we used Vuex to dynamically manage the state of our wholesale furniture and home decor eCommerce site. I was responsable for creating the product listing page (which dynamically displayed products as an admin modified the product list), product details page, back-office management of products, and a Favorites functionality, relying on localStorage to store the current state of a user\'s Favorites and Cart items.',
               description_fr: 'Dans ce projet de groupe, nous avons utilisé Vuex pour gérer dynamiquement l\'état de notre site de commerce électronique de meubles et de décoration d\'intérieur en gros. J\'étais responsable de la création de la page de liste des produits (qui affichait dynamiquement les produits lorsqu\'un administrateur modifiait la liste des produits), de la page de détails des produits, de la gestion du back-office des produits, et d\'une fonctionnalité de Favoris, s\'appuyant sur localStorage pour stocker l\'état actuel des Favoris et des éléments du panier d\'un utilisateur.',
               image: require('@/assets/img/WebWares_favs_screenshot.png'),
-              url: 'https://github.com/wktatschl',
+              url: 'https://github.com/Tommy-BOU/Projet-WebWares',
               domain: 'https://tommy-bou.github.io/Projet-WebWares'
             },
             {
@@ -28,7 +28,7 @@ export default createStore({
               id: 3,
               title: 'Le Morpion',
               technologies: 'JavaScript',
-              description_en: 'A classic !',
+              description_en: 'The classic game of Tic-Tac-Toe (called \'le morpion\' in French) !',
               description_fr: 'Le grand classique !',
               image: require('@/assets/img/Le_morpion_screenshot.png'),
               url: 'https://github.com/wktatschl/Tic-tac-toe',

@@ -79,9 +79,13 @@ export default {
   },
   methods: {
     sendEmail() {
-      const firstName = document.getElementById('first-name').value;
-      const lastName = document.getElementById('last-name').value;
-      const message = document.getElementById('message-text').value;
+      const firstNameInput = document.getElementById('first-name');
+      const lastNameInput = document.getElementById('last-name');
+      const messageInput = document.getElementById('message-text');
+
+      const firstName = firstNameInput.value;
+      const lastName = lastNameInput.value;
+      const message = messageInput.value;
 
       const subject = encodeURIComponent(`Contact Form Inquiry from ${firstName} ${lastName}`);
       const body = encodeURIComponent(`Dear Wolfgang, ${message}`);
@@ -89,6 +93,10 @@ export default {
       const mailtoLink = `mailto:wktatschl@icloud.com?subject=${subject}&body=${body}`;
 
       window.location.href = mailtoLink;
+
+      firstNameInput.value = '';
+      lastNameInput.value = '';
+      messageInput.value = '';
     }
   }
 }
