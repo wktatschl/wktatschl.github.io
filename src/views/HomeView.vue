@@ -116,6 +116,10 @@ export default {
       return this.language === 'english'
     }, 
   },
+
+  mounted() {
+    document.title = "Wolfgang Karl";
+  }
 }
 </script>
 
