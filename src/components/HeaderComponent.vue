@@ -161,6 +161,11 @@ export default {
       margin-top: 5px;
     }
 
+    .logo {
+       flex: 0 1 100px;
+       
+    }
+
     .logo a{
         font-family: monospace;
         text-decoration: none;
@@ -171,6 +176,15 @@ export default {
     .k {
       color: #FFC0CB;
       margin-left: -12px;
+    }
+
+    .logo span {
+      transition: margin .5s ease;
+    }
+
+    .logo:hover span{
+      margin: -1px;
+      transition: .5s ease;
     }
 
     .nav-links {
