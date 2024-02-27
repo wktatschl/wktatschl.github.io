@@ -146,7 +146,7 @@ export default {
       padding: 15px;
       text-decoration: none;
       color: #2c3e50;
-      font-family: monospace;
+      font-family: 'Ubuntu Mono', monospace;
       font-size: 1.3em;
     }
 
@@ -167,7 +167,7 @@ export default {
     }
 
     .logo a{
-        font-family: monospace;
+        font-family: 'Ubuntu Mono', monospace;
         text-decoration: none;
         font-size: 5em;
         color: cornflowerblue;
@@ -193,8 +193,8 @@ export default {
         gap: 40px;
         text-decoration: none;
         align-items: center;
-        font-size: 1.15em;
-        font-family: monospace;
+        font-size: 1.05em;
+        font-family: 'Ubuntu Mono', monospace;
     }
 
     .nav-links a {
@@ -225,14 +225,14 @@ export default {
       font-weight: bold;
       font-size: .8em;
       cursor: pointer;
-      margin-right: 10px;
+      margin: 0 10px;
     }
 
     #langBtn span {
       padding: 6px 6px;
       border-radius: 10px;
       transition: all .1s ease-in;
-      font-family: monospace;
+      font-family: 'Ubuntu Mono', monospace;
     }
 
     #langBtn span.active {
