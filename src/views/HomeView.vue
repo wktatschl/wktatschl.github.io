@@ -38,10 +38,9 @@
         <h4 v-if="isEnglish">At a glance</h4>
         <h4 v-else>En aperçu</h4>
         <h2>
-          <span v-if="isEnglish">Techs |</span><span v-else>Technos |</span> 
-          <span v-if="isEnglish">Languages| </span>
-          <span v-else>Langages| </span>
-          Frameworks
+          <span v-if="isEnglish">Techs /</span><span v-else>Technos /</span> 
+          <span v-if="isEnglish"> Languages</span>
+          <span v-else> Langages </span>
         </h2>
         <br>
         <br>
