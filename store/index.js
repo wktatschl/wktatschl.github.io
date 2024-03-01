@@ -44,8 +44,18 @@ export default createStore({
               url: 'https://github.com/wktatschl/Gradient-generator',
               domain: 'https://gradient-generator-bay.vercel.app/'
             },
-             {
+            {
               id: 5,
+              title: 'Haunted House',
+              technologies: 'three.js',
+              description_en: 'My second project putting into practice what I\'ve been learning in Bruno-Simon\'s three.js course. The house started smaller and I decided to turn it into a haunted mansion :). I use ambientLight, directionalLight (representing the moonlight), and several pointLights here (above the door, little floating lights representing ghosts), and added shadows. A brick texture, door (wood) texture, and grass texture are used. Graves were added using Math.random around the house. I use several simple three.js geometries for the house. NOTE: You can see the scene from different angles or zoom-in/out using your mouse !',
+              description_fr: 'Mon deuxième projet mettant en pratique ce que j\'ai appris dans le cours three.js de Bruno-Simon. La maison était plus petite au départ et j\'ai décidé de la transformer en manoir hanté :). J\'ai utilisé ambientLight, directionalLight (représentant le clair de lune), et plusieurs pointLights ici (au dessus de la porte, des petites lumières flottantes représentant les fantômes), et j\'ai ajouté des ombres. Une texture de brique, une texture de porte (bois) et une texture d\'herbe sont utilisées. Des tombes ont été ajoutées en utilisant Math.random autour de la maison. J\'utilise plusieurs géométries three.js simples pour la maison. NB : Vous pouvez voir la scène sous différents angles ou faire un zoom à l\'aide de votre souris !',
+              image: require('@/assets/img/haunted_house_screenshot.png'),
+              url: 'https://github.com/wktatschl/haunted-house',
+              domain: 'https://haunted-house-murex-alpha.vercel.app/'
+            },
+            {
+              id: 6,
               title: '3D Text Experience',
               technologies: 'three.js',
               description_en: 'After coming across some really cool 3D experiences (not least of which was Bruno Simon\'s) created using three.js, I decided I had to start learning this myself. This was done using a TextGeometry and TorusGeometries (300 randomly placed and sized), as well as a metallic texture (among other things). Looking forward to creating more and more complex 3D experiences !',

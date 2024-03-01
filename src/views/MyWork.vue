@@ -136,6 +136,10 @@ export default {
     .recent-projects-section {
       margin-top: 40px;
     }
+
+    h1 {
+      width: 90%;
+    }
   }
 
   @media screen and (max-width: 768px) {
