@@ -44,9 +44,10 @@
         </h2>
         <br>
         <br>
+        <p>PHP (Symfony) <progress value="80" max="100">90%</progress></p>
         <p>JavaScript <progress value="80" max="100">80%</progress></p>
-        <p>Vue.js <progress value="90" max="100">90%</progress></p>
-        <p>CSS <progress value="80" max="100">80%</progress></p>
+        <p>Vue.js <progress value="90" max="100">80%</progress></p>
+        <p>CSS <progress value="80" max="100">90%</progress></p>
         <p>HTML <progress value="90" max="100">90%</progress></p>
         <p>Bootstrap <progress value="80" max="100">80%</progress></p>
       </div>
